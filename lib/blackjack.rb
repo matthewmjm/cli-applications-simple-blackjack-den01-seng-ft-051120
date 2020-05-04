@@ -32,9 +32,7 @@ end
 def initial_round
   # code #initial_round here
   card_total = 0
-  deal_card()
   card_total += deal_card
-  deal_card()
   card_total += deal_card
   display_card_total(card_total)
   return card_total
@@ -67,5 +65,6 @@ end
 
 def runner
   # code runner here
+  welcome
 end
     
