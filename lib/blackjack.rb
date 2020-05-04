@@ -45,6 +45,8 @@ end
 
 def invalid_command
   # code invalid_command here
+  if get_user_input != 'h' or get_user_input != "s"
+    puts 
 end
 
 #####################################################
