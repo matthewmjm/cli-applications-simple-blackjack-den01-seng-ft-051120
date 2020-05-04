@@ -1,3 +1,4 @@
+require 'pry'
 def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
@@ -21,6 +22,7 @@ end
 def get_user_input
   # code #get_user_input here
   user_input = gets.chomp
+  binding.pry
 end
 
 def end_game(card_total)
@@ -43,7 +45,7 @@ def hit?(card_total)
   # code hit? here
   prompt_user()
   get_user_input()
-    if user_input == 's'
+    if get_user_input == 's'
       elsif user_input == 'h'
         deal_card()
         card_total += deal_card
