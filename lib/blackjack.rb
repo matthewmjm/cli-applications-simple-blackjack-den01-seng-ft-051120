@@ -22,7 +22,6 @@ end
 def get_user_input
   # code #get_user_input here
   get_user_input = gets.chomp
-  binding.pry
 end
 
 def end_game(card_total)
@@ -45,14 +44,14 @@ def hit?(card_total)
   # code hit? here
   prompt_user()
   get_user_input()
-    if get_user_input == 's'
-      elsif get_user_input == 'h'
-        deal_card()
-        card_total += deal_card
-    else
-      invalid_command()
-      prompt_user()
-    end
+ #   if get_user_input == 's'
+  #    elsif get_user_input == 'h'
+  #      deal_card()
+ #       card_total += deal_card
+ #   else
+ #     invalid_command()
+ #     prompt_user()
+ #   end
     card_total
 end
 
