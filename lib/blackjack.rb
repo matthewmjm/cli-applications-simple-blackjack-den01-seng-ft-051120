@@ -45,16 +45,15 @@ def hit?(card_total)
   prompt_user()
   user_input = get_user_input()
     #logic
-    if user_input == "s"
-      elsif user_input == "h"
-        deal_card()
-        card_total += deal_card
+    if user_input == "h"
+      card_total += deal_card
+      return card_total
+    elsif user_input == "s"
+      return card_total    
     else
       invalid_command()
       prompt_user()
     end
-    
-    card_total
 end
 
 def invalid_command
