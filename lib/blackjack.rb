@@ -44,7 +44,6 @@ def hit?(card_total)
   # code hit? here
   prompt_user()
   get_user_input()
-  binding.pry
     #logic
     if get_user_input == "s"
       elsif get_user_input == "h"
