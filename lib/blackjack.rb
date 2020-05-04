@@ -42,8 +42,8 @@ end
 
 def hit?(card_total)
   # code hit? here
-  prompt_user()
-  user_input = get_user_input()
+  prompt_user
+  user_input = get_user_input
     #logic
     if user_input == "h"
       card_total += deal_card
@@ -51,8 +51,8 @@ def hit?(card_total)
     elsif user_input == "s"
       return card_total    
     else
-      invalid_command()
-      prompt_user()
+      invalid_command
+      prompt_user
     end
 end
 
